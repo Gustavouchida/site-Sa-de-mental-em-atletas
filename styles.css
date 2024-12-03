@@ -1,155 +1,84 @@
-:root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
-    --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3c92fa;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saúde Mental em Atletas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagens/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#desafios">Desafios</a></li>
+                    <li><a href="#estrategias">Estratégias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-}
+    <section id="introducao" class="section">
+        <div class="container">
+            <h1>Saúde Mental em Atletas</h1>
+            <p>A saúde mental dos atletas é uma questão fundamental, muitas vezes negligenciada, mas essencial para o bem-estar e desempenho no esporte. Neste site, discutiremos a importância da saúde mental para atletas e como ela pode ser promovida e protegida.</p>
+        </div>
+    </section>
 
-* {
-    margin: 0;
-    padding: 0;
-}
+    <section id="importancia" class="section">
+        <div class="container">
+            <h2>Importância da Saúde Mental em Atletas</h2>
+            <p>A saúde mental desempenha um papel crucial no desempenho e recuperação dos atletas. A pressão constante, o estresse e o medo de falhar podem levar a distúrbios psicológicos, afetando o bem-estar e a performance.</p>
+        </div>
+    </section>
 
-.principal {
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
-    text-align: center;
-}
+    <section id="desafios" class="section">
+        <div class="container">
+            <h2>Desafios para a Saúde Mental dos Atletas</h2>
+            <ul>
+                <li>Pressão para obter resultados e vencer.</li>
+                <li>Lesões e o impacto psicológico do afastamento dos treinos e competições.</li>
+                <li>Estigma em torno do cuidado psicológico e da vulnerabilidade emocional.</li>
+            </ul>
+        </div>
+    </section>
 
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+    <section id="estrategias" class="section">
+        <div class="container">
+            <h2>Estratégias para Manter a Saúde Mental</h2>
+            <ul>
+                <li>Buscar ajuda profissional: psicólogos e psiquiatras especializados.</li>
+                <li>Desenvolver uma rotina equilibrada entre treinamento e descanso.</li>
+                <li>Praticar mindfulness e técnicas de relaxamento para controlar o estresse.</li>
+            </ul>
+        </div>
+    </section>
 
-.container__botao {
-    background-color: var(--botao-azul);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
-    display: block;
-    text-decoration: none;
-    margin-bottom: 1em;
-}
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Se você é um atleta que busca apoio psicológico ou conhece alguém que precise, entre em contato conosco para mais informações.</p>
+            <form action="mailto:contato@saudemental.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
 
-.botao_secundario {
-    background-color: transparent;
-    border: 2px solid var(--branco-principal)
-}
-
-.container__aviso {
-    font-size: 12px;
-    color: var(--cinza-secundario);
-}
-
-.container__titulo {
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.container__imagem {
-    margin: 1em 0 2em 0;
-}
-
-.container__caixa {
-    margin: 0 6em;
-}
-
-.secundario__imagem {
-    width: 80%;
-}
-
-.secundario {
-    align-items: center;
-    margin: 0 10em;
-}
-
-.descricao__titulo {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--branco-principal);
-    margin-bottom: 0.1em;
-}
-
-.descricao__texto {
-    color: var(--cinza-secundario);
-}
-
-.secundario__botao {
-    display: inline-block;
-    margin-top: 1em;
-}
-
-.container__descricao {
-    padding: 2em;
-}
-
-.dispositivos__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 5em 0;
-}
-
-.dispositivos {
-    text-align: center;
-}
-
-.dispositivos__titulo {
-    font-size: 48px;
-    color: var(--branco-principal);
-}
-
-.lista__item {
-    font-size: 32px;
-    color: var(--branco-principal);
-}
-
-.rodape {
-    text-align: center;
-    margin: 5em 3em;
-}
-
-.rodape__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1em;
-}
-
-.lista__link a{
-    text-decoration: none;
-    color: var(--branco-principal);
-    margin-left: 1em;
-}
-
-.rodape__texto {
-    margin: 1em 0;
-    color: var(--cinza-secundario);
-    font-size: 14px;
-}
-
-.lista__link a:hover {
-    color: var(--botao-azul);
-}
-
-.lista__link a:active {
-    color: purple;
-}
-
-.container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Saúde Mental em Atletas | Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
