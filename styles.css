@@ -7,12 +7,6 @@
     <title>Saúde Mental em Atletas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <img src="imagens/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
                     <li><a href="#introducao">Introdução</a></li>
                     <li><a href="#importancia">Importância</a></li>
                     <li><a href="#desafios">Desafios</a></li>
@@ -63,7 +57,7 @@
         <div class="container">
             <h2>Entre em Contato</h2>
             <p>Se você é um atleta que busca apoio psicológico ou conhece alguém que precise, entre em contato conosco para mais informações.</p>
-            <form action="mailto:contato@saudemental.com" method="post" enctype="text/plain">
+            <form action="mailto: uchida1contact@gmail.com" method="post" enctype="text/plain">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required><br><br>
                 <label for="email">Email:</label>
